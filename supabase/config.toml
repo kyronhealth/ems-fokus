@@ -1,0 +1,6 @@
+# Supabase CLI settings used by `supabase functions deploy`
+project_id = "ems-fokus"
+
+[functions.stripe-webhook]
+# Stripe calls this function directly; it is protected by the Stripe signature instead of a login.
+verify_jwt = false

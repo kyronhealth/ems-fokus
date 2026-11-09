@@ -1,0 +1,628 @@
+{
+ "version": 1,
+ "groups": {
+  "mz": {
+   "name": "Muster zuordnen",
+   "secPerItem": 53,
+   "short": "Muster zuordnen"
+  },
+  "mng": {
+   "name": "Medizinisch-naturwissenschaftliches Grundverständnis",
+   "short": "Med.-nat. Grundverständnis",
+   "secPerItem": 150
+  },
+  "oir": {
+   "name": "Objekte im Raum",
+   "secPerItem": 33,
+   "short": "Objekte im Raum"
+  },
+  "qfp": {
+   "name": "Quantitative und formale Probleme",
+   "short": "Quantitative Probleme",
+   "secPerItem": 150
+  },
+  "figuren": {
+   "name": "Figuren lernen",
+   "secPerItem": 20,
+   "short": "Figuren lernen"
+  },
+  "fakten": {
+   "name": "Fakten lernen",
+   "secPerItem": 20,
+   "short": "Fakten lernen"
+  },
+  "tv": {
+   "name": "Textverständnis",
+   "secPerItem": 150,
+   "short": "Textverständnis"
+  },
+  "dt": {
+   "name": "Diagramme und Tabellen",
+   "secPerItem": 150,
+   "short": "Diagramme und Tabellen"
+  },
+  "ksa": {
+   "name": "Konzentriertes und sorgfältiges Arbeiten",
+   "secPerItem": null,
+   "short": "Konzentriertes und sorgfältiges Arbeiten"
+  }
+ },
+ "sets": [
+  {
+   "id": "diagnose-1",
+   "kind": "diagnostic",
+   "title": "Gratis-Diagnose",
+   "free": true,
+   "position": 0,
+   "spec": {
+    "sections": [
+     {
+      "type": "questions",
+      "group": "mng",
+      "items": [
+       "mng1",
+       "mng2",
+       "mng3"
+      ]
+     },
+     {
+      "type": "questions",
+      "group": "qfp",
+      "items": [
+       "qfp1",
+       "qfp2",
+       "qfp3"
+      ]
+     },
+     {
+      "type": "learn",
+      "group": "fakten",
+      "learnSec": 120,
+      "profiles": [
+       {
+        "name": "Frau Keller",
+        "age": 34,
+        "job": "Lehrerin",
+        "dx": "Migräne",
+        "trait": "trägt immer einen roten Schal"
+       },
+       {
+        "name": "Herr Baumann",
+        "age": 58,
+        "job": "Landwirt",
+        "dx": "Bandscheibenvorfall",
+        "trait": "sammelt alte Uhren"
+       },
+       {
+        "name": "Frau Rossi",
+        "age": 46,
+        "job": "Pilotin",
+        "dx": "Asthma",
+        "trait": "hat drei Katzen"
+       },
+       {
+        "name": "Herr Meier",
+        "age": 71,
+        "job": "pensionierter Koch",
+        "dx": "Gicht",
+        "trait": "spielt Alphorn"
+       },
+       {
+        "name": "Frau Huber",
+        "age": 27,
+        "job": "Physiotherapeutin",
+        "dx": "Schilddrüsenunterfunktion",
+        "trait": "läuft Marathon"
+       }
+      ]
+     },
+     {
+      "type": "questions",
+      "group": "tv",
+      "items": [
+       "tv1",
+       "tv2",
+       "tv3"
+      ]
+     },
+     {
+      "type": "questions",
+      "group": "fakten",
+      "items": [
+       "fl1",
+       "fl2",
+       "fl3"
+      ]
+     },
+     {
+      "type": "questions",
+      "group": "dt",
+      "items": [
+       "dt1",
+       "dt2",
+       "dt3"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "qfp-1",
+   "kind": "practice",
+   "group": "qfp",
+   "title": "Übungsset 1",
+   "free": true,
+   "position": 1,
+   "spec": {
+    "items": [
+     "pq1",
+     "pq2",
+     "pq3",
+     "pq4",
+     "pq5",
+     "pq6",
+     "pq7",
+     "pq8",
+     "pq9"
+    ]
+   }
+  }
+ ],
+ "items": [
+  {
+   "id": "mng1",
+   "group": "mng",
+   "stem": "Nach einer Mahlzeit steigt die Glukosekonzentration im Blut. Die Betazellen der Bauchspeicheldrüse schütten daraufhin Insulin aus. Insulin bewirkt, dass Muskel- und Fettzellen vermehrt Glukose aufnehmen und dass die Leber Glukose als Glykogen speichert. Sinkt der Blutzucker, schütten die Alphazellen der Bauchspeicheldrüse Glukagon aus. Glukagon fördert in der Leber den Abbau von Glykogen und die Abgabe von Glukose ins Blut. Muskelzellen besitzen keine Rezeptoren für Glukagon.",
+   "question": "Welche der folgenden Aussagen lässt/lassen sich aus dem Text ableiten?<br>I. Fehlt Insulin, bleibt der Blutzucker nach einer Mahlzeit länger erhöht.<br>II. Glukagon erhöht den Blutzucker auch durch den Abbau von Glykogen in den Muskeln.<br>III. Fehlen funktionierende Alphazellen, ist das Risiko einer Unterzuckerung erhöht.",
+   "options": [
+    "nur I",
+    "nur II",
+    "nur I und II",
+    "nur I und III",
+    "I, II und III"
+   ],
+   "correct": 3,
+   "explanation": "I stimmt: Insulin senkt den Blutzucker, indem Zellen Glukose aufnehmen und die Leber sie speichert. II stimmt nicht: Muskelzellen haben keine Glukagon-Rezeptoren. III stimmt: Ohne Alphazellen fehlt das Glukagon, das bei sinkendem Blutzucker Glukose freisetzt."
+  },
+  {
+   "id": "mng2",
+   "group": "mng",
+   "stem": "Wasser bewegt sich durch eine Zellmembran in Richtung der höheren Konzentration gelöster Teilchen (Osmose). Das Innere roter Blutkörperchen entspricht in seiner Konzentration etwa einer 0,9-prozentigen Kochsalzlösung. In einer Lösung mit geringerer Konzentration strömt Wasser in die Zellen; sie schwellen an und können platzen. In einer Lösung mit höherer Konzentration verlieren sie Wasser und schrumpfen.",
+   "question": "Rote Blutkörperchen werden in drei Röhrchen gegeben: Röhrchen 1 enthält destilliertes Wasser, Röhrchen 2 eine 0,9-prozentige und Röhrchen 3 eine 3-prozentige Kochsalzlösung. Welche Aussage trifft zu?",
+   "options": [
+    "In Röhrchen 2 schrumpfen die Zellen.",
+    "In Röhrchen 1 strömt Wasser aus den Zellen heraus.",
+    "In Röhrchen 3 platzen die Zellen.",
+    "In Röhrchen 1 können die Zellen platzen, in Röhrchen 3 schrumpfen sie.",
+    "In allen drei Röhrchen bleibt das Zellvolumen unverändert."
+   ],
+   "correct": 3,
+   "explanation": "Destilliertes Wasser ist geringer konzentriert als das Zellinnere: Wasser strömt ein, die Zellen können platzen. Die 3-prozentige Lösung ist höher konzentriert: Die Zellen verlieren Wasser und schrumpfen. In Röhrchen 2 ändert sich kaum etwas."
+  },
+  {
+   "id": "mng3",
+   "group": "mng",
+   "stem": "Die Rot-Grün-Sehschwäche wird X-chromosomal-rezessiv vererbt. Frauen besitzen zwei X-Chromosomen, Männer ein X- und ein Y-Chromosom. Eine Frau zeigt das Merkmal nur, wenn beide X-Chromosomen das veränderte Gen tragen. Ein Mann zeigt es bereits, wenn sein einziges X-Chromosom das veränderte Gen trägt. Söhne erhalten ihr X-Chromosom immer von der Mutter, Töchter je ein X-Chromosom von Mutter und Vater.",
+   "question": "Ein Mann mit Rot-Grün-Sehschwäche und eine Frau, die das veränderte Gen nicht trägt, bekommen Kinder. Welche Aussage trifft zu?",
+   "options": [
+    "Alle Söhne haben die Sehschwäche.",
+    "Alle Töchter haben die Sehschwäche.",
+    "Alle Töchter tragen das veränderte Gen, zeigen das Merkmal aber nicht.",
+    "Die Hälfte der Söhne trägt das veränderte Gen.",
+    "Die Hälfte der Töchter hat die Sehschwäche."
+   ],
+   "correct": 2,
+   "explanation": "Jede Tochter erhält das X-Chromosom des Vaters (mit verändertem Gen) und ein unverändertes X der Mutter: Sie trägt das Gen, zeigt das Merkmal aber nicht. Söhne erhalten ihr X von der Mutter und sind weder betroffen noch Träger."
+  },
+  {
+   "id": "qfp1",
+   "group": "qfp",
+   "stem": "Ein Patient soll 1,2 Liter Infusionslösung gleichmässig über 4 Stunden erhalten. 1 ml entspricht 20 Tropfen.",
+   "question": "Wie viele Tropfen pro Minute müssen eingestellt werden?",
+   "options": [
+    "50",
+    "80",
+    "100",
+    "120",
+    "200"
+   ],
+   "correct": 2,
+   "explanation": "1200 ml : 240 min = 5 ml pro Minute. 5 ml × 20 Tropfen = 100 Tropfen pro Minute."
+  },
+  {
+   "id": "qfp2",
+   "group": "qfp",
+   "stem": "Ein Medikament liegt als Lösung mit 50 mg Wirkstoff pro ml vor. Ein Kind mit 20 kg Körpergewicht soll 15 mg Wirkstoff pro kg Körpergewicht erhalten.",
+   "question": "Wie viele Milliliter der Lösung werden benötigt?",
+   "options": [
+    "3 ml",
+    "4 ml",
+    "6 ml",
+    "7,5 ml",
+    "15 ml"
+   ],
+   "correct": 2,
+   "explanation": "15 mg × 20 kg = 300 mg. 300 mg : 50 mg/ml = 6 ml."
+  },
+  {
+   "id": "qfp3",
+   "group": "qfp",
+   "stem": "Ein Wirkstoff hat im Körper eine Halbwertszeit von 4 Stunden. Um 8 Uhr befinden sich 240 mg davon im Körper. Es wird nichts nachdosiert.",
+   "question": "Wie viel Wirkstoff ist um 20 Uhr noch vorhanden?",
+   "options": [
+    "15 mg",
+    "30 mg",
+    "40 mg",
+    "60 mg",
+    "80 mg"
+   ],
+   "correct": 1,
+   "explanation": "Von 8 bis 20 Uhr vergehen 12 Stunden, also drei Halbwertszeiten: 240 → 120 → 60 → 30 mg."
+  },
+  {
+   "id": "tv1",
+   "group": "tv",
+   "question": "Welche Aussage über das Protein UCP1 lässt sich aus dem Text ableiten?",
+   "options": [
+    "UCP1 erhöht die Herstellung von ATP in den Mitochondrien.",
+    "UCP1 gibt dem braunen Fettgewebe seine Farbe.",
+    "UCP1 bewirkt, dass Energie aus der Fettverbrennung als Wärme statt als ATP frei wird.",
+    "UCP1 kommt vor allem im weissen Fettgewebe vor.",
+    "UCP1 löst das Kältezittern aus."
+   ],
+   "correct": 2,
+   "explanation": "Absatz 1: UCP1 sorgt dafür, dass die Energie nicht als ATP gespeichert, sondern als Wärme abgegeben wird. Die Farbe stammt von eisenhaltigen Enzymen, nicht von UCP1.",
+   "passage": {
+    "title": "Braunes Fettgewebe",
+    "paras": [
+     "Der menschliche Körper besitzt zwei Arten von Fettgewebe. Weisses Fettgewebe speichert Energie in Form von Fett. Braunes Fettgewebe dagegen verbrennt Fett, um Wärme zu erzeugen. Seine Zellen enthalten besonders viele Mitochondrien, deren eisenhaltige Enzyme dem Gewebe die bräunliche Farbe geben. In diesen Mitochondrien sitzt das Protein UCP1. Es sorgt dafür, dass die bei der Fettverbrennung frei werdende Energie nicht im Energieträger ATP gespeichert, sondern direkt als Wärme abgegeben wird.",
+     "Lange galt braunes Fettgewebe als Besonderheit von Neugeborenen und Winterschläfern. Neugeborene können noch nicht durch Muskelzittern Wärme erzeugen; ihr braunes Fett liegt vor allem zwischen den Schulterblättern. Erst Untersuchungen mit der Positronen-Emissions-Tomografie (PET) zeigten, dass auch viele Erwachsene aktives braunes Fett besitzen, meist im Bereich von Hals und Schlüsselbein. Bei diesen Untersuchungen wird eine radioaktiv markierte Zuckerverbindung gespritzt, die sich in stoffwechselaktivem Gewebe anreichert.",
+     "Die Menge an aktivem braunem Fett ist nicht konstant. In Studien nahm sie zu, wenn Versuchspersonen mehrere Wochen lang täglich einige Stunden bei 15 bis 17 °C verbrachten. Gleichzeitig zitterten diese Personen bei Kälte weniger. Bei Menschen mit starkem Übergewicht fand man im Durchschnitt weniger aktives braunes Fett als bei schlanken Menschen. Ob das wenige braune Fett zum Übergewicht beiträgt oder eine Folge davon ist, lässt sich aus diesen Beobachtungen nicht ableiten.",
+     "Unklar ist zudem, wie viel braunes Fett zum täglichen Energieverbrauch beiträgt. Die Schätzungen reichen von wenigen bis zu rund hundert Kilokalorien pro Tag. Ein Grund für die Unsicherheit: Die PET-Methode erfasst die Aufnahme von Zucker, braunes Fett verbrennt aber überwiegend Fettsäuren."
+    ]
+   }
+  },
+  {
+   "id": "tv2",
+   "group": "tv",
+   "question": "Welche der folgenden Aussagen lässt/lassen sich aus dem Text ableiten?<br>I. Regelmässiger Aufenthalt in kühler Umgebung kann die Menge an aktivem braunem Fett erhöhen.<br>II. Wenig braunes Fett ist eine Ursache von Übergewicht.<br>III. Die PET-Methode könnte die Aktivität des braunen Fetts unterschätzen.",
+   "options": [
+    "nur I",
+    "nur II",
+    "nur I und III",
+    "nur II und III",
+    "I, II und III"
+   ],
+   "correct": 2,
+   "explanation": "I steht in Absatz 3. II wird ausdrücklich offengelassen: Ursache oder Folge lässt sich nicht ableiten. III folgt aus Absatz 4: PET misst Zuckeraufnahme, braunes Fett verbrennt aber vor allem Fettsäuren.",
+   "passage": {
+    "title": "Braunes Fettgewebe",
+    "paras": [
+     "Der menschliche Körper besitzt zwei Arten von Fettgewebe. Weisses Fettgewebe speichert Energie in Form von Fett. Braunes Fettgewebe dagegen verbrennt Fett, um Wärme zu erzeugen. Seine Zellen enthalten besonders viele Mitochondrien, deren eisenhaltige Enzyme dem Gewebe die bräunliche Farbe geben. In diesen Mitochondrien sitzt das Protein UCP1. Es sorgt dafür, dass die bei der Fettverbrennung frei werdende Energie nicht im Energieträger ATP gespeichert, sondern direkt als Wärme abgegeben wird.",
+     "Lange galt braunes Fettgewebe als Besonderheit von Neugeborenen und Winterschläfern. Neugeborene können noch nicht durch Muskelzittern Wärme erzeugen; ihr braunes Fett liegt vor allem zwischen den Schulterblättern. Erst Untersuchungen mit der Positronen-Emissions-Tomografie (PET) zeigten, dass auch viele Erwachsene aktives braunes Fett besitzen, meist im Bereich von Hals und Schlüsselbein. Bei diesen Untersuchungen wird eine radioaktiv markierte Zuckerverbindung gespritzt, die sich in stoffwechselaktivem Gewebe anreichert.",
+     "Die Menge an aktivem braunem Fett ist nicht konstant. In Studien nahm sie zu, wenn Versuchspersonen mehrere Wochen lang täglich einige Stunden bei 15 bis 17 °C verbrachten. Gleichzeitig zitterten diese Personen bei Kälte weniger. Bei Menschen mit starkem Übergewicht fand man im Durchschnitt weniger aktives braunes Fett als bei schlanken Menschen. Ob das wenige braune Fett zum Übergewicht beiträgt oder eine Folge davon ist, lässt sich aus diesen Beobachtungen nicht ableiten.",
+     "Unklar ist zudem, wie viel braunes Fett zum täglichen Energieverbrauch beiträgt. Die Schätzungen reichen von wenigen bis zu rund hundert Kilokalorien pro Tag. Ein Grund für die Unsicherheit: Die PET-Methode erfasst die Aufnahme von Zucker, braunes Fett verbrennt aber überwiegend Fettsäuren."
+    ]
+   }
+  },
+  {
+   "id": "tv3",
+   "group": "tv",
+   "question": "Welche Aussage über Neugeborene lässt sich aus dem Text ableiten?",
+   "options": [
+    "Neugeborene besitzen kein weisses Fettgewebe.",
+    "Neugeborene erzeugen Wärme vor allem durch Muskelzittern.",
+    "Neugeborene sind für die Wärmebildung stärker auf braunes Fett angewiesen als Erwachsene, die auch zittern können.",
+    "Bei Neugeborenen liegt das braune Fett vor allem im Bereich des Halses.",
+    "Braunes Fett wurde bei Neugeborenen erstmals mit der PET-Methode nachgewiesen."
+   ],
+   "correct": 2,
+   "explanation": "Neugeborene können noch nicht zittern (Absatz 2), Erwachsene schon (Absatz 3). Ihr braunes Fett liegt zwischen den Schulterblättern; die PET-Befunde betreffen Erwachsene.",
+   "passage": {
+    "title": "Braunes Fettgewebe",
+    "paras": [
+     "Der menschliche Körper besitzt zwei Arten von Fettgewebe. Weisses Fettgewebe speichert Energie in Form von Fett. Braunes Fettgewebe dagegen verbrennt Fett, um Wärme zu erzeugen. Seine Zellen enthalten besonders viele Mitochondrien, deren eisenhaltige Enzyme dem Gewebe die bräunliche Farbe geben. In diesen Mitochondrien sitzt das Protein UCP1. Es sorgt dafür, dass die bei der Fettverbrennung frei werdende Energie nicht im Energieträger ATP gespeichert, sondern direkt als Wärme abgegeben wird.",
+     "Lange galt braunes Fettgewebe als Besonderheit von Neugeborenen und Winterschläfern. Neugeborene können noch nicht durch Muskelzittern Wärme erzeugen; ihr braunes Fett liegt vor allem zwischen den Schulterblättern. Erst Untersuchungen mit der Positronen-Emissions-Tomografie (PET) zeigten, dass auch viele Erwachsene aktives braunes Fett besitzen, meist im Bereich von Hals und Schlüsselbein. Bei diesen Untersuchungen wird eine radioaktiv markierte Zuckerverbindung gespritzt, die sich in stoffwechselaktivem Gewebe anreichert.",
+     "Die Menge an aktivem braunem Fett ist nicht konstant. In Studien nahm sie zu, wenn Versuchspersonen mehrere Wochen lang täglich einige Stunden bei 15 bis 17 °C verbrachten. Gleichzeitig zitterten diese Personen bei Kälte weniger. Bei Menschen mit starkem Übergewicht fand man im Durchschnitt weniger aktives braunes Fett als bei schlanken Menschen. Ob das wenige braune Fett zum Übergewicht beiträgt oder eine Folge davon ist, lässt sich aus diesen Beobachtungen nicht ableiten.",
+     "Unklar ist zudem, wie viel braunes Fett zum täglichen Energieverbrauch beiträgt. Die Schätzungen reichen von wenigen bis zu rund hundert Kilokalorien pro Tag. Ein Grund für die Unsicherheit: Die PET-Methode erfasst die Aufnahme von Zucker, braunes Fett verbrennt aber überwiegend Fettsäuren."
+    ]
+   }
+  },
+  {
+   "id": "dt1",
+   "group": "dt",
+   "question": "Welche Aussage trifft gemäss Tabelle und Richtwerten zu?",
+   "options": [
+    "Person B hat einen erhöhten Nüchternwert.",
+    "Person D hat eine gestörte Glukosetoleranz.",
+    "Person B hat einen normalen Nüchternwert, aber eine gestörte Glukosetoleranz.",
+    "Nur Person C liegt bei beiden Werten im Normbereich.",
+    "Person A hat den grössten Anstieg zwischen den beiden Messungen."
+   ],
+   "correct": 2,
+   "explanation": "Person B: nüchtern 5,4 (unter 5,6, also normal), nach 2 Stunden 9,2 (zwischen 7,8 und 11,0, also gestörte Glukosetoleranz). Person D liegt nach 2 Stunden mit 7,6 noch im Normbereich; den grössten Anstieg hat Person C (+5,4).",
+   "exhibit": {
+    "title": "Blutzucker in mmol/l vor und 2 Stunden nach einem Zuckertrunk (75 g Glukose)",
+    "head": [
+     "Person",
+     "nüchtern",
+     "nach 2 Stunden"
+    ],
+    "rows": [
+     [
+      "A",
+      "4,8",
+      "6,1"
+     ],
+     [
+      "B",
+      "5,4",
+      "9,2"
+     ],
+     [
+      "C",
+      "7,4",
+      "12,8"
+     ],
+     [
+      "D",
+      "5,0",
+      "7,6"
+     ]
+    ],
+    "note": "Richtwerte nüchtern: unter 5,6 normal; 5,6 bis 6,9 erhöht; ab 7,0 Diabetes. Richtwerte nach 2 Stunden: unter 7,8 normal; 7,8 bis 11,0 gestörte Glukosetoleranz; ab 11,1 Diabetes."
+   }
+  },
+  {
+   "id": "dt2",
+   "group": "dt",
+   "question": "In welcher Woche war der Anstieg der gemeldeten Fälle gegenüber der Vorwoche prozentual am grössten?",
+   "options": [
+    "Woche 2",
+    "Woche 3",
+    "Woche 4",
+    "Woche 5",
+    "Woche 6"
+   ],
+   "correct": 0,
+   "explanation": "Woche 2: 100 → 160 = +60 %. Woche 3: 160 → 240 = +50 %. Woche 4: 240 → 336 = +40 %. In Woche 5 und 6 sinken die Zahlen. Achtung: Den grössten Anstieg in absoluten Zahlen hat Woche 4 (+96).",
+   "exhibit": {
+    "title": "Gemeldete Grippefälle pro Woche in einer Stadt",
+    "labels": [
+     "1",
+     "2",
+     "3",
+     "4",
+     "5",
+     "6"
+    ],
+    "values": [
+     100,
+     160,
+     240,
+     336,
+     320,
+     200
+    ],
+    "xLabel": "Woche"
+   }
+  },
+  {
+   "id": "dt3",
+   "group": "dt",
+   "question": "Welche Aussage trifft zu?",
+   "options": [
+    "Medikament Z ist am wenigsten verträglich, weil bei Z am meisten Nebenwirkungen auftraten.",
+    "Der Anteil der Behandelten mit Nebenwirkung ist bei Y doppelt so hoch wie bei Z.",
+    "Bei X ist der Anteil der Behandelten mit Nebenwirkung am tiefsten.",
+    "Insgesamt hatten mehr als 25 % aller Behandelten eine Nebenwirkung.",
+    "Medikament Y wurde am häufigsten verabreicht."
+   ],
+   "correct": 1,
+   "explanation": "Anteile: X 40 von 200 = 20 %, Y 30 von 100 = 30 %, Z 45 von 300 = 15 %. Y ist also doppelt so hoch wie Z. Z hat zwar am meisten Fälle, aber den tiefsten Anteil. Insgesamt: 115 von 600 = rund 19 %.",
+   "exhibit": {
+    "title": "Behandelte Personen mit und ohne Nebenwirkung, nach Medikament",
+    "head": [
+     "Medikament",
+     "mit Nebenwirkung",
+     "ohne Nebenwirkung"
+    ],
+    "rows": [
+     [
+      "X",
+      "40",
+      "160"
+     ],
+     [
+      "Y",
+      "30",
+      "70"
+     ],
+     [
+      "Z",
+      "45",
+      "255"
+     ]
+    ],
+    "note": ""
+   }
+  },
+  {
+   "id": "fl1",
+   "group": "fakten",
+   "question": "Welche Diagnose hat die Patientin, die als Pilotin arbeitet?",
+   "options": [
+    "Migräne",
+    "Asthma",
+    "Gicht",
+    "Schilddrüsenunterfunktion",
+    "Bandscheibenvorfall"
+   ],
+   "correct": 1,
+   "explanation": "Frau Rossi, 46, Pilotin: Asthma."
+  },
+  {
+   "id": "fl2",
+   "group": "fakten",
+   "question": "Wie alt ist der Patient, der alte Uhren sammelt?",
+   "options": [
+    "27",
+    "34",
+    "46",
+    "58",
+    "71"
+   ],
+   "correct": 3,
+   "explanation": "Herr Baumann, 58, Landwirt, sammelt alte Uhren."
+  },
+  {
+   "id": "fl3",
+   "group": "fakten",
+   "question": "Welchen Beruf hat die Person mit Schilddrüsenunterfunktion?",
+   "options": [
+    "Lehrerin",
+    "Pilotin",
+    "Physiotherapeutin",
+    "Landwirt",
+    "Koch"
+   ],
+   "correct": 2,
+   "explanation": "Frau Huber, 27, Physiotherapeutin: Schilddrüsenunterfunktion."
+  },
+  {
+   "id": "pq1",
+   "group": "qfp",
+   "stem": "Eine Glukoselösung ist 5-prozentig, das heisst, sie enthält 5 g Glukose pro 100 ml.",
+   "question": "Wie viel Glukose enthalten 250 ml dieser Lösung?",
+   "options": [
+    "1,25 g",
+    "5 g",
+    "12,5 g",
+    "25 g",
+    "50 g"
+   ],
+   "correct": 2,
+   "explanation": "250 ml sind 2,5 × 100 ml. 2,5 × 5 g = 12,5 g."
+  },
+  {
+   "id": "pq2",
+   "group": "qfp",
+   "stem": "Ein Herz schlägt 70-mal pro Minute und pumpt pro Schlag 70 ml Blut.",
+   "question": "Wie viele Liter Blut pumpt es pro Stunde?",
+   "options": [
+    "29,4 l",
+    "49 l",
+    "294 l",
+    "490 l",
+    "2940 l"
+   ],
+   "correct": 2,
+   "explanation": "70 × 70 ml = 4900 ml = 4,9 l pro Minute. 4,9 l × 60 = 294 l pro Stunde."
+  },
+  {
+   "id": "pq3",
+   "group": "qfp",
+   "stem": "Für eine Lösung wird 1 Teil Wirkstoffkonzentrat mit 4 Teilen Wasser gemischt.",
+   "question": "Wie viel Konzentrat ist in 600 ml der fertigen Lösung enthalten?",
+   "options": [
+    "120 ml",
+    "150 ml",
+    "200 ml",
+    "240 ml",
+    "480 ml"
+   ],
+   "correct": 0,
+   "explanation": "1 Teil Konzentrat und 4 Teile Wasser ergeben insgesamt 5 Teile. 600 ml : 5 = 120 ml. Falle: 600 : 4 = 150 ml."
+  },
+  {
+   "id": "pq4",
+   "group": "qfp",
+   "stem": "Der Ruhepuls einer Person sinkt durch Training von 80 auf 68 Schläge pro Minute.",
+   "question": "Um wie viel Prozent ist der Ruhepuls gesunken?",
+   "options": [
+    "12 %",
+    "15 %",
+    "17,6 %",
+    "20 %",
+    "85 %"
+   ],
+   "correct": 1,
+   "explanation": "Abnahme 12 Schläge, bezogen auf den Ausgangswert 80: 12 : 80 = 0,15 = 15 %. Falle: 12 : 68 = 17,6 %."
+  },
+  {
+   "id": "pq5",
+   "group": "qfp",
+   "stem": "Eine Bakterienkultur verdoppelt sich alle 20 Minuten. Zu Beginn sind 500 Bakterien vorhanden.",
+   "question": "Wie viele Bakterien sind es nach 2 Stunden?",
+   "options": [
+    "3000",
+    "6000",
+    "16 000",
+    "32 000",
+    "64 000"
+   ],
+   "correct": 3,
+   "explanation": "2 Stunden = 120 Minuten = 6 Verdopplungen. 500 × 2⁶ = 500 × 64 = 32 000."
+  },
+  {
+   "id": "pq6",
+   "group": "qfp",
+   "stem": "Der Body-Mass-Index (BMI) ist das Körpergewicht in kg geteilt durch das Quadrat der Körpergrösse in m. Eine Person ist 1,60 m gross und hat einen BMI von 25.",
+   "question": "Wie schwer ist die Person?",
+   "options": [
+    "40 kg",
+    "56 kg",
+    "64 kg",
+    "72 kg",
+    "80 kg"
+   ],
+   "correct": 2,
+   "explanation": "Gewicht = BMI × Grösse² = 25 × 1,6² = 25 × 2,56 = 64 kg."
+  },
+  {
+   "id": "pq7",
+   "group": "qfp",
+   "stem": "Ein Nervenimpuls breitet sich mit einer Geschwindigkeit von 50 m/s aus.",
+   "question": "Wie lange braucht er für eine Strecke von 1 m vom Rückenmark bis zum Fuss?",
+   "options": [
+    "2 ms",
+    "5 ms",
+    "20 ms",
+    "50 ms",
+    "200 ms"
+   ],
+   "correct": 2,
+   "explanation": "Zeit = Strecke : Geschwindigkeit = 1 m : 50 m/s = 0,02 s = 20 ms."
+  },
+  {
+   "id": "pq8",
+   "group": "qfp",
+   "stem": "Die molare Masse von Natriumchlorid beträgt 58,5 g/mol.",
+   "question": "Wie viel Natriumchlorid braucht man für 2 Liter einer Lösung mit der Konzentration 0,1 mol/l?",
+   "options": [
+    "2,93 g",
+    "5,85 g",
+    "11,7 g",
+    "29,25 g",
+    "117 g"
+   ],
+   "correct": 2,
+   "explanation": "2 l × 0,1 mol/l = 0,2 mol. 0,2 mol × 58,5 g/mol = 11,7 g."
+  },
+  {
+   "id": "pq9",
+   "group": "qfp",
+   "stem": "Die Clearance C einer Substanz berechnet sich nach der Formel C = (U × V) : P. Dabei ist U die Konzentration im Urin, V das Urinvolumen pro Minute und P die Konzentration im Blutplasma.",
+   "question": "Wie verändert sich C, wenn U verdoppelt und P halbiert wird, während V gleich bleibt?",
+   "options": [
+    "C bleibt gleich.",
+    "C halbiert sich.",
+    "C verdoppelt sich.",
+    "C vervierfacht sich.",
+    "C verachtfacht sich."
+   ],
+   "correct": 3,
+   "explanation": "Der Zähler wird doppelt so gross (×2), der Nenner halb so gross (dadurch nochmals ×2). Insgesamt: × 4."
+  }
+ ]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "EMS Fokus",
+  "short_name": "EMS Fokus",
+  "lang": "de-CH",
+  "start_url": "/heute",
+  "display": "standalone",
+  "background_color": "#F7F7F3",
+  "theme_color": "#0F6B66",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
