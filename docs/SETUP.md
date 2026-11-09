@@ -64,8 +64,8 @@ Confirm signup, body:
 
 Cloudflare's free plan allows commercial use. (Vercel's free plan does not.)
 
-1. Create a free account at cloudflare.com.
-2. Workers & Pages > Create > Pages > Connect to Git > choose ems-fokus.
+1. Use your existing Cloudflare account (the one hosting kyron.ch). No new account is needed; the free plan allows several sites.
+2. Workers & Pages > Create > Pages > Connect to Git > choose kyronhealth/ems-fokus. If Cloudflare only shows the kyron site repository, click "Configure GitHub" and give it access to ems-fokus as well.
 3. Build settings:
    Framework preset: None
    Build command: npm run build
