@@ -1,12 +1,12 @@
 // Copies content/bank.json into Supabase. Run on your own computer:
 //   npm run import-content
-// Needs VITE_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in .env.local (never commit that file).
+// Needs VITE_SUPABASE_URL and SUPABASE_SECRET_KEY (sb_secret_...) in .env.local (never commit that file).
 import { readFileSync } from 'node:fs';
 import { createClient } from '@supabase/supabase-js';
 
 const url = process.env.VITE_SUPABASE_URL;
-const key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-if (!url || !key) { console.error('Set VITE_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY in .env.local'); process.exit(1); }
+const key = process.env.SUPABASE_SECRET_KEY ?? process.env.SUPABASE_SERVICE_ROLE_KEY;
+if (!url || !key) { console.error('Set VITE_SUPABASE_URL and SUPABASE_SECRET_KEY in .env.local'); process.exit(1); }
 const db = createClient(url, key, { auth: { persistSession: false } });
 const bank = JSON.parse(readFileSync(new URL('../content/bank.json', import.meta.url)));
 

@@ -1,11 +1,15 @@
 import { createClient } from 'npm:@supabase/supabase-js@2.118.0';
 
-// Service-role client: bypasses row-level security. Never expose this key to the browser.
-export const admin = createClient(
-  Deno.env.get('SUPABASE_URL')!,
-  Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!,
-  { auth: { persistSession: false } },
-);
+// Secret-key client: bypasses row-level security. Never expose this key to the browser.
+// Supabase provides the new secret keys as JSON in SUPABASE_SECRET_KEYS; older projects use SUPABASE_SERVICE_ROLE_KEY.
+function secretKey(): string {
+  const keys = Deno.env.get('SUPABASE_SECRET_KEYS');
+  if (keys) {
+    try { const k = JSON.parse(keys); if (k.default) return k.default; } catch { /* fall through */ }
+  }
+  return Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+}
+export const admin = createClient(Deno.env.get('SUPABASE_URL')!, secretKey(), { auth: { persistSession: false } });
 
 export async function getUser(req: Request) {
   const token = (req.headers.get('Authorization') ?? '').replace(/^Bearer\s+/i, '');

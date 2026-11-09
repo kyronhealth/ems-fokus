@@ -1,6 +1,17 @@
 # Supabase CLI settings used by `supabase functions deploy`
 project_id = "ems-fokus"
 
+# With Supabase's publishable/secret API keys the platform's JWT check must be off.
+# Each function checks the signed-in student itself (create-checkout, tutor, delete-account)
+# or the Stripe signature (stripe-webhook).
+[functions.create-checkout]
+verify_jwt = false
+
 [functions.stripe-webhook]
-# Stripe calls this function directly; it is protected by the Stripe signature instead of a login.
+verify_jwt = false
+
+[functions.tutor]
+verify_jwt = false
+
+[functions.delete-account]
 verify_jwt = false
